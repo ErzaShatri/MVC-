@@ -1,0 +1,78 @@
+﻿@model Movie
+
+@{
+    ViewData["Title"] = "Movie details";
+}
+
+
+<div style="display:flex;justify-content:center;">
+<img class="bg-image" src="@Model.ImageURL"></img>
+    </div>
+<div class="bg-text" >
+    <h3 style="color:forestgreen">@Model.Price.ToString("c")</h3>
+    <h2>@Model.MovieCategory.Name</h2>
+    <h1 style="font-size:50px;color:darkred;">@Model.Name</h1>
+    <p> @Model.Cinema.Name / @Model.Producer.FullName</p>
+
+    <p >@Model.StartDate \ @Model.EndDate</p>
+    <div style="display:flex;justify-content:center;margin:6px;">
+        @foreach (var actor in Model.Actors_Movies)
+        {
+            <div class="column text-center">
+                <img class="border-info " src="@actor.Actor.ProfilePictureURL" style="max-width: 60px;height:60px;" />
+                <br />
+                <p style="margin:5px">  @actor.Actor.FullName</p>
+            </div>
+        }
+    </div>
+    <div class="column text-center " style="margin:0 69px">
+        <p>@Html.Raw(Model.Description)</p>
+    </div>
+</div>
+
+<style>
+    .bg-text {
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: black; /* Black w/opacity/see-through */
+        color: white;
+        font-weight: bold;
+        border: 3px solid #f1f1f1;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        width: 80%;
+        padding: 20px;
+        text-align: center;
+    }
+    * {
+        box-sizing: border-box;
+    }
+
+    .bg-image {
+        @*background-image:url(@Model.ImageURL);*@
+
+        /* The image used */
+        /* Add the blur effect */
+        filter: blur(8px);
+        -webkit-filter: blur(8px);
+        /* Full height */
+        height: 100%;
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        max-height:1000px;
+        min-height:900px
+    }
+</style>
+
+@*@section Scripts{
+        <script>
+            $(document).ready(function () {
+                var output = document.getElementById('ImageURL');
+                output.src = $("#ImageURL").val();
+            })
+        </script>
+    }*@

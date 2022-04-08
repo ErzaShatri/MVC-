@@ -1,0 +1,121 @@
+@import url('file:///C:\Users\ibade\source\repos\eli18\CinemaApplication\CinemaApplication\wwwroot\css\signin.css');
+signin.css
+html,
+body {
+    margin: 0;
+    padding: 0;
+    /* background-image: url('../media/Img/Cinema.jpg');
+    background-image: url('https://images.hdqwalls.com/download/peaceful-blur-background-1x-1920x1080.jpg');*/
+    background-image: url('https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y2luZW1hfGVufDB8fDB8fA%3D%3D&w=1000&q=80');
+    background-size: cover;
+   
+    color: #fff;
+    height:1000px;
+}
+
+.loginbox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 500px;
+    height: 520px;
+    padding: 50px 25px;
+    box-sizing: border-box;
+    background-color: black;
+    border-radius: 35px;
+    box-shadow: 0 0 15px darkred;
+}
+
+h4 {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    /*color: rgb(255 217 9);*/
+    color:darkred;
+}
+
+.form-control {
+    
+    height: 45px;
+    color: darkred;
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+
+.btn1{
+    width: 100px;
+    height: 40px;
+    font-weight: bold;
+    color:darkred;
+    border:5px solid darkred;
+}
+
+.aa {
+    color: #3dd760;
+    border-color: #38bb56;
+}
+
+.registerbox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 500px;
+
+    padding: 70px 25px;
+    box-sizing: border-box;
+    background: black;
+    border-radius: 35px;
+    box-shadow: 0 0 15px darkred;
+}
+input{
+    color:darkred;
+}
+/*body {
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #f5f5f;
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+.form-signin{
+    position:absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 350px;
+    height: 420px;
+    padding: 80px 40px;
+    box-sizing: border-box;
+    background: rgba(0,0,0,0.5);
+}
+
+/*.form-signin .checkbox {
+  font-weight: 400;
+
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}*/
